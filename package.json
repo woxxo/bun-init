@@ -1,0 +1,25 @@
+{
+    "name": "bun-init",
+    "version": "0.0.1",
+    "description": "Create package.json and other necessary files for a new Bun project.",
+    "license": "MIT",
+    "main": "./src/index.ts",
+    "bin": "./src/cli.ts",
+    "repository": "github:woxxo/bun-init",
+    "author": "woxxo",
+    "homepage": "https://github.com/woxxo/bun-init",
+    "private": false,
+    "sideEffects": false,
+    "type": "module",
+    "scripts": {
+        "start": "bun ./src/cli.ts",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "engines": {
+        "bun": ">=1.2.2"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "@types/bun": "latest"
+    }
+}
