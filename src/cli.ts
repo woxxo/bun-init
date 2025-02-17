@@ -15,7 +15,7 @@ const bf = f.bfValues();
 if (bf !== '') await Bun.write('bunfig.toml', bf);
 
 const txt = f.textFiles();
-if (typeof txt.license === 'string' && typeof txt.readme === 'string') {
+if (txt.license !== '' && txt.readme !== '') {
 	await Bun.write('README.md', txt.readme);
 	await Bun.write('LICENSE', txt.license);
 }

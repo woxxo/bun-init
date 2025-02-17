@@ -1,4 +1,4 @@
-type TextFiles = { readme?: string, license?: string };
+type TextFiles = { readme: string, license: string };
 
 const readme: string = `# New project
 
@@ -32,7 +32,7 @@ const license: string = `MIT License
   SOFTWARE.`;
 
 const textFiles = (): TextFiles => {
-	const result: TextFiles = {};
+	const result: TextFiles = {readme: '', license: ''};
 
 	console.log('[README.md]');
 	console.log(readme);
