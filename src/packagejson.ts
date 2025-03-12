@@ -18,7 +18,7 @@ const fields: [string,  PJValue, 'string' | 'boolean' | 'array' | 'object' ][] =
 	[ 'keywords', [ "application", "javascript", "bun" ], 'array' ],
 	[ 'scripts', { "start": "bun ./src/start.js", "build": "bun ./scripts/build.js", "test": "echo \"Error: no test specified\" && exit 1" }, 'object' ],
 	[ 'exports', { ".": "./src/index.js", "./server": "./src/server.js", "./jsx-runtime": "./jsx/index.js", "./jsx-dev-runtime": "./jsx/index.js" }, 'object' ],
-	[ 'engines', { "bun": ">=1.2.2"}, 'object' ],
+	[ 'engines', { "bun": ">=1.2.5"}, 'object' ],
 	[ 'dependencies', { "react": "latest" }, 'object' ],
 	[ 'devDependencies', { "@types/bun": "latest" }, 'object' ],
 ];
@@ -27,7 +27,7 @@ const pjValues = (): string => {
 	
 	const result: { [index: string]: PJValue } = {};
 
-	console.log('[package.json]');
+	console.log('\n[package.json]');
 	console.log('Press "Enter" for default value.');
 	console.log('Enter "skip" to skip the parameter.');
 	console.log('Enter "cancel" to exit without saving file.\n');

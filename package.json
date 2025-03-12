@@ -1,6 +1,6 @@
 {
     "name": "bun-init",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Create package.json and other necessary files for a new Bun project.",
     "license": "MIT",
     "main": "./src/index.ts",
@@ -16,7 +16,7 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "engines": {
-        "bun": ">=1.2.2"
+        "bun": ">=1.2.5"
     },
     "dependencies": {},
     "devDependencies": {

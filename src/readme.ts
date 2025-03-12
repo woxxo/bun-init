@@ -34,7 +34,7 @@ const license: string = `MIT License
 const textFiles = (): TextFiles => {
 	const result: TextFiles = {readme: '', license: ''};
 
-	console.log('[README.md]');
+	console.log('\n[README.md]');
 	console.log(readme);
 
 	console.log('[LICENSE]');

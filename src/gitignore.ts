@@ -1,9 +1,11 @@
-const ignore: string = 'node_modules/\n.env\n';
+const ignore: string = `node_modules/
+.env
+`;
 
 const giValues = (): string => {
 	let result: string = '';
 
-	console.log('[.gitignore]');
+	console.log('\n[.gitignore]');
 	console.log(ignore);
 
 	const p: string = (prompt('Create .gitignore file?', 'yes') || 'no').toLowerCase();
