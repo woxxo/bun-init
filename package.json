@@ -1,6 +1,6 @@
 {
     "name": "bun-init",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Create package.json and other necessary files for a new Bun project.",
     "license": "MIT",
     "main": "./src/index.ts",

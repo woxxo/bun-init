@@ -1,5 +1,7 @@
-const ignore: string = `node_modules/
+const ignore: string = `node_modules
 .env
+dist
+out
 `;
 
 const giValues = (): string => {
